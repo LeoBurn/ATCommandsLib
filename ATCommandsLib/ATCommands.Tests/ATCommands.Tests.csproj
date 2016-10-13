@@ -50,8 +50,18 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ATCommandsLibsOperationsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ATCommands.Base\ATCommands.Base.csproj">
+      <Project>{9d0d62cb-d2f3-4b0e-b479-4969e6d3b1f6}</Project>
+      <Name>ATCommands.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ATCommands.Implementation\ATCommands.Implementation.csproj">
+      <Project>{689aee4f-a662-414f-b651-277d5a14b131}</Project>
+      <Name>ATCommands.Implementation</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
